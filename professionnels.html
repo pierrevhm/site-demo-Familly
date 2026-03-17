@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Professionnels - Family Services 33</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = { theme: { extend: { colors: { "primary": "#638d37", "navy": "#1a2b3c" }, fontFamily: { "display": ["Manrope", "sans-serif"] } } } }
+    </script>
+</head>
+<body class="font-display bg-background-light text-slate-900 flex flex-col min-h-screen">
+
+    <header class="fixed top-0 z-50 w-full px-6 py-4">
+        <div class="mx-auto max-w-7xl">
+            <nav class="flex items-center justify-between rounded-full bg-white/90 px-8 py-3 backdrop-blur-md shadow-sm border border-slate-200/50">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white"><span class="material-symbols-outlined">family_restroom</span></div>
+                    <span class="text-xl font-bold tracking-tight text-navy hidden sm:block">Family Services <span class="text-primary">33</span></span>
+                </a>
+                <div class="hidden lg:flex items-center gap-10">
+                    <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="index.html">Accueil</a>
+                    <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="particuliers.html">Particuliers</a>
+                    <a class="text-sm font-bold text-primary" href="professionnels.html">Professionnels</a>
+                    <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="contact.html">Contact</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="openModal()" class="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white hover:scale-105 transition-transform shadow-lg">Devis Gratuit</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 pt-24 w-full">
+        <section class="relative min-h-[70vh] flex items-center overflow-hidden py-20 w-full">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-white/95 to-transparent z-10"></div>
+                <img class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtlsYEnFMC5GBuMUo-YAyEEcpevc4SqlDEcxDbMeA-9iT2S9GsNRZbFNg-q5GaeAG3q_KQelT7VgjnVwIN7aAsD2hfEFvvMOOhc9jvZZPoA_zYDNGlnbTm7ZWVpd4vXkZOe1OWCWUBjUO7fMJYPZkOnfA2idzE3JMQyLcXn_WoTlciDPGE8L_Ezex6kmUci0dUwo_xWQ2MYX8FEJ6miTh6zvhGlaej7DTLksZgYRrex4Uj2kmJXhAi_OhFmJXIR67GHUXqSMFXXBL8"/>
+            </div>
+            <div class="relative z-20 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-sm">verified</span> Excellence B2B
+                    </div>
+                    <h1 class="text-navy text-5xl md:text-7xl font-black leading-[1.1]">
+                        Solutions de <span class="text-primary italic">Propreté</span>
+                    </h1>
+                    <p class="text-slate-600 text-xl leading-relaxed max-w-xl">
+                        Entretien de bureaux, commerces et copropriétés avec la rigueur et le savoir-faire Family Services 33.
+                    </p>
+                    <button onclick="openModal()" class="px-10 py-5 rounded-full bg-primary text-white font-black text-lg shadow-xl hover:scale-105 transition-all w-fit">Demander un devis B2B</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const modal = document.getElementById('devisModal');
+        function openModal() { modal.classList.remove('hidden'); modal.classList.add('flex'); }
+        function closeModal() { modal.classList.add('hidden'); modal.classList.remove('flex'); }
+    </script>
+</body>
+</html>
