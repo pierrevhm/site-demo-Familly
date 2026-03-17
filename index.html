@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr" class="light">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Family Services 33</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#638d37",
+                        "navy": "#1a2b3c",
+                        "navy-deep": "#151d1d",
+                        "background-light": "#f6f7f7",
+                        "background-dark": "#0f1717",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Manrope', sans-serif; }
+        .glass-card, .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+        }
+        .page-section {
+            display: none; /* Hidden by default, JS will toggle this */
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+
+    <div id="accueil" class="page-section relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header class="fixed top-0 z-50 w-full px-6 py-4">
+            <div class="mx-auto max-w-7xl">
+                <nav class="flex items-center justify-between rounded-full bg-white/80 dark:bg-background-dark/80 px-8 py-3 backdrop-blur-md shadow-sm border border-slate-200/50 dark:border-slate-800/50">
+                    <div class="flex items-center gap-2">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white">
+                            <span class="material-symbols-outlined">family_restroom</span>
+                        </div>
+                        <span class="text-xl font-bold tracking-tight text-navy dark:text-white leading-none">Family Services <span class="text-primary">33</span></span>
+                    </div>
+                    <div class="hidden md:flex items-center gap-10">
+                        <a class="text-sm font-semibold text-primary hover:text-primary transition-colors" href="#accueil">Accueil</a>
+                        <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#particuliers">Particuliers</a>
+                        <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#professionnels">Professionnels</a>
+                        <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#contact">Contact</a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <button class="hidden lg:flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105 active:scale-95 shadow-lg">
+                            <span>Devis Gratuit</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="flex-1 pt-24">
+            <div class="mx-auto max-w-7xl px-6 py-12 @container">
+                <div class="relative overflow-hidden rounded-xl bg-slate-200 @[480px]:rounded-xl min-h-[600px] flex items-center justify-center shadow-2xl">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfu7u5kNYZTPal_oxCNCpNWSdzjZapA4pDWYkFWJvdWY0SHSLDdJiKiTwPRO6RsZP9T9WuwzY-IJ0hXssSWzMFkixlI0cBwktJIRMMDYicgt2iWXfnUYZKnjwrdDSChR9At7BOmR8oH9zWMJcMIHgDn0gMhjT5gIPVd4KsThldtAngtK-JbFfQ0dgC_0JZ35dWH9__nclyFHjchbCbROSpLnoGAzA5R50XqLJ4pvabKi2nZxauC-8tWRqG6TzsLxAOJXHJKJk1tjjS')"></div>
+                    <div class="relative z-10 max-w-3xl px-8 text-center @[480px]:text-left @[480px]:px-16">
+                        <span class="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1 text-sm font-bold tracking-wide text-primary uppercase">Service Premium à Bordeaux</span>
+                        <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-navy sm:text-6xl @[480px]:text-7xl">Votre foyer, <br/><span class="text-primary italic font-medium">notre priorité.</span></h1>
+                        <p class="mt-6 text-lg leading-relaxed text-slate-700 max-w-xl">Découvrez l'excellence des services à domicile. Libérez votre temps précieux avec nos solutions sur mesure pour une vie sereine.</p>
+                        <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
+                            <button class="group flex items-center justify-center gap-3 rounded-full bg-navy px-8 py-5 text-lg font-bold text-white shadow-xl transition-all hover:bg-navy/90 hover:shadow-navy/20 hover:scale-105">
+                                <span>DEMANDER UN DEVIS</span>
+                                <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="relative -mt-20 z-20 pb-24">
+                <div class="mx-auto max-w-7xl px-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="glass-card group flex flex-col items-center p-10 text-center rounded-lg transition-all hover:-translate-y-4 hover:shadow-2xl">
+                            <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                                <span class="material-symbols-outlined text-4xl">cleaning_services</span>
+                            </div>
+                            <h3 class="mb-3 text-2xl font-bold text-navy">Ménage</h3>
+                            <p class="text-slate-600 leading-relaxed">Un intérieur impeccable sans effort. Entretien régulier ou grand nettoyage de saison.</p>
+                        </div>
+                        <div class="glass-card group flex flex-col items-center p-10 text-center rounded-lg transition-all hover:-translate-y-4 hover:shadow-2xl">
+                            <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                                <span class="material-symbols-outlined text-4xl">park</span>
+                            </div>
+                            <h3 class="mb-3 text-2xl font-bold text-navy">Jardinage</h3>
+                            <p class="text-slate-600 leading-relaxed">Redonnez vie à vos extérieurs. Taille, tonte et entretien paysager professionnel.</p>
+                        </div>
+                        <div class="glass-card group flex flex-col items-center p-10 text-center rounded-lg transition-all hover:-translate-y-4 hover:shadow-2xl">
+                            <div class="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                                <span class="material-symbols-outlined text-4xl">child_care</span>
+                            </div>
+                            <h3 class="mb-3 text-2xl font-bold text-navy">Garde d'enfants</h3>
+                            <p class="text-slate-600 leading-relaxed">La sécurité et l'éveil de vos enfants entre les mains de professionnels bienveillants.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-background-dark py-12">
+            <div class="mx-auto max-w-7xl px-6">
+                <div class="text-center text-sm text-slate-400">© 2024 Family Services 33. Tous droits réservés.</div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="particuliers" class="page-section relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <header class="sticky top-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="size-10 bg-primary rounded-full flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined">family_restroom</span>
+                    </div>
+                    <h2 class="text-navy-deep dark:text-white text-xl font-extrabold tracking-tight">Family Services <span class="text-primary">33</span></h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-navy-deep dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors" href="#accueil">Accueil</a>
+                    <a class="text-primary text-sm font-semibold hover:text-primary transition-colors" href="#particuliers">Particuliers</a>
+                    <a class="text-navy-deep dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors" href="#professionnels">Professionnels</a>
+                    <a class="text-navy-deep dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors" href="#contact">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="hidden sm:flex items-center justify-center rounded-full h-11 px-6 bg-primary text-white text-sm font-bold hover:shadow-lg hover:shadow-primary/30 transition-all">Devis Gratuit</button>
+                </div>
+            </div>
+        </header>
+        <section class="relative px-6 lg:px-20 py-12 lg:py-20">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 flex flex-col gap-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+                        <span class="material-symbols-outlined text-sm">verified_user</span> Service à la personne agréé
+                    </div>
+                    <h1 class="text-navy-deep dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                        Libérez votre temps, nous prenons soin de <span class="text-primary">votre foyer</span>
+                    </h1>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg lg:text-xl leading-relaxed max-w-xl">
+                        Services sur mesure à Bordeaux et ses environs. Profitez de ce qui compte vraiment, nous gérons le quotidien avec excellence.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="flex items-center justify-center rounded-full h-14 px-8 bg-primary text-white text-base font-bold shadow-xl shadow-primary/25 hover:scale-105 transition-transform">Demander mon devis personnalisé</button>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 relative">
+                    <div class="absolute -inset-4 bg-primary/10 rounded-xl -rotate-2"></div>
+                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl">
+                        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtTfujZCEqKEO4mPFGVXEWZ-eZQFaofv6sRMWY70d0xNsZJcUnoG_OKcpznwy2gyXGh7dfWlos5EW8rS9ilUjStR7fjjmtuQoJCbxGcw2drIIMi8bzZDlThDEBM4wBcG07iD4TRn4kdFC-rgfin_uDkN9AZXkRMwSdVwBl6l7M3xD2pyKYtpukaXtHEfyS2QeTlynATJfp3UCXsbClvnS4wUh-P-fvIkZ9HldwJdyxxSJpLYxTOK2EVUwiHA90CtEvQr10Eiiy8MAY"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="px-6 lg:px-20 py-20 bg-white dark:bg-slate-900/50">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-navy-deep dark:text-white text-3xl lg:text-5xl font-extrabold mb-4">Nos Services d'Excellence</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg mb-8">Une équipe qualifiée pour chaque besoin de votre quotidien.</p>
+                </div>
+        </section>
+        <footer class="bg-navy-deep text-white pt-20 pb-10 px-6 lg:px-20">
+            <div class="max-w-7xl mx-auto text-center text-slate-500 text-sm">
+                <p>© 2024 Family Services 33. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="professionnels" class="page-section relative min-h-screen w-full flex-col overflow-x-hidden">
+        <header class="sticky top-0 z-50 w-full glass border-b border-primary/10">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="bg-primary p-2 rounded-lg text-white">
+                        <span class="material-symbols-outlined text-2xl">corporate_fare</span>
+                    </div>
+                    <h2 class="text-navy dark:text-white text-xl font-extrabold tracking-tight">Family Services <span class="text-primary text-2xl">33</span></h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-navy/70 dark:text-slate-300 hover:text-primary transition-colors font-semibold text-sm uppercase tracking-wider" href="#accueil">Accueil</a>
+                    <a class="text-navy/70 dark:text-slate-300 hover:text-primary transition-colors font-semibold text-sm uppercase tracking-wider" href="#particuliers">Particuliers</a>
+                    <a class="text-primary font-bold text-sm uppercase tracking-wider" href="#professionnels">Professionnels</a>
+                    <a class="text-navy/70 dark:text-slate-300 hover:text-primary transition-colors font-semibold text-sm uppercase tracking-wider" href="#contact">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="px-6 py-2.5 rounded-full bg-primary text-white font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">Devis Gratuit</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="relative min-h-[85vh] flex items-center overflow-hidden pt-10 pb-20">
+                <div class="absolute inset-0 z-0">
+                    <div class="absolute inset-0 bg-gradient-to-r from-background-light via-background-light/95 to-transparent z-10"></div>
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtlsYEnFMC5GBuMUo-YAyEEcpevc4SqlDEcxDbMeA-9iT2S9GsNRZbFNg-q5GaeAG3q_KQelT7VgjnVwIN7aAsD2hfEFvvMOOhc9jvZZPoA_zYDNGlnbTm7ZWVpd4vXkZOe1OWCWUBjUO7fMJYPZkOnfA2idzE3JMQyLcXn_WoTlciDPGE8L_Ezex6kmUci0dUwo_xWQ2MYX8FEJ6miTh6zvhGlaej7DTLksZgYRrex4Uj2kmJXhAi_OhFmJXIR67GHUXqSMFXXBL8"/>
+                </div>
+                <div class="relative z-20 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs uppercase tracking-widest">
+                            <span class="material-symbols-outlined text-sm">verified</span> Excellence Bordeaux Métropole
+                        </div>
+                        <h1 class="text-navy dark:text-white text-5xl md:text-7xl font-black leading-[1.1] tracking-tighter">
+                            Solutions de <span class="text-primary italic">Propreté</span> pour Professionnels
+                        </h1>
+                        <p class="text-navy/70 dark:text-slate-400 text-xl leading-relaxed max-w-xl">
+                            Entretien de bureaux, commerces et copropriétés avec la rigueur et le savoir-faire Family Services 33. Une image impeccable pour vos clients et collaborateurs.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <button class="px-10 py-5 rounded-full bg-primary text-white font-black text-lg shadow-xl shadow-primary/30 hover:shadow-primary/40 transition-all flex items-center justify-center gap-3">
+                                Demander un devis professionnel <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-24 relative bg-background-light dark:bg-background-dark">
+                <div class="max-w-7xl mx-auto px-6">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                        <div class="max-w-2xl">
+                            <h2 class="text-4xl font-black text-navy dark:text-white mb-4">Nos Services Business</h2>
+                            <p class="text-navy/60 dark:text-slate-400 text-lg">Des solutions de nettoyage de haute précision adaptées aux exigences des entreprises bordelaises.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-navy text-white pt-20 pb-10">
+            <div class="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
+                <p>© 2024 Family Services 33. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        // Fonction pour cacher toutes les pages et n'afficher que la bonne
+        function switchTab(tabId) {
+            // Cacher toutes les sections
+            document.querySelectorAll('.page-section').forEach(page => {
+                page.style.display = 'none';
+            });
+            // Afficher la section ciblée
+            const activePage = document.getElementById(tabId);
+            if (activePage) {
+                activePage.style.display = 'block';
+            }
+            // Remonter en haut de la page
+            window.scrollTo(0, 0);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Afficher la page "Accueil" par défaut au chargement
+            switchTab('accueil');
+
+            // Ajouter les événements de clic sur tous les liens du menu
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const targetId = link.getAttribute('href').substring(1); // Enlève le '#'
+                    
+                    // Si le lien correspond à un de nos id, on empêche le comportement par défaut et on change de page
+                    if(['accueil', 'particuliers', 'professionnels'].includes(targetId)) {
+                        e.preventDefault();
+                        switchTab(targetId);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
